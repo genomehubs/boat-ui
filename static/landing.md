@@ -15,3 +15,13 @@ Metadata in :hub include proportions of GC and masked bases and BUSCO statuses f
 ::report{report="oxford" x="assembly_id=GCA_905147225.1,GCA_905147235.1 AND collate(sequence_id,busco_gene) AND feature_type=metazoa-busco-gene AND sequence_id = LR990104.1,LR990084.1,LR990095.1" plotRatio="1.5" pointSize="10" result=feature item xs=6}
 
 :::
+
+# BUSCO counts
+
+Busco identities are recorded for each taxon, allowing plots of counts in each category.
+
+:::grid{container direction="row" toggle title="BUSCO counts" spacing="1"}
+
+::report{report="scatter" x="length(lepidoptera_odb10_missing) AND tax_tree(7088)" y="length(lepidoptera_odb10_fragmented)" rank="species" includeEstimates="true" plotRatio="auto" pointSize="15" result="taxon" taxonomy="ncbi" item xs=12 ratio=2}
+
+:::
