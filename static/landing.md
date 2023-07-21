@@ -8,11 +8,11 @@ Metadata in :hub include proportions of GC and masked bases and BUSCO statuses f
 
 :hub allows exploration of colineraity between pairs of assemblies through Oxford plots using BUSCO gene positions.
 
-:::grid{container direction="row" toggle title="Oxford plot examples" spacing="1"}
+:::grid{container direction="row" toggle title="Oxford plot examples" spacing="1" class="padded"}
 
-::report{report="oxford" x="assembly_id=GCA_905147045.1,GCA_905147235.1 AND collate(sequence_id,busco_gene) AND feature_type=metazoa-busco-gene" plotRatio="1.5" pointSize="10" result="feature" item xs=6}
+::report{report="oxford" x="assembly_id=GCA_905147045.1,GCA_905147235.1 AND collate(sequence_id,busco_gene) AND feature_type=metazoa-busco-gene" plotRatio="1.5" pointSize="20" result="feature" item xs=6}
 
-::report{report="oxford" x="assembly_id=GCA_905147045.1,GCA_905147235.1 AND collate(sequence_id,busco_gene) AND feature_type=metazoa-busco-gene AND sequence_id = LR990104.1,LR990084.1,LR990095.1" plotRatio="1.5" pointSize="10" result=feature item xs=6}
+::report{report="oxford" x="assembly_id=GCA_905147045.1,GCA_905147235.1 AND collate(sequence_id,busco_gene) AND feature_type=lepidoptera-busco-gene AND sequence_id = LR989906.1,LR990085.1,LR989907.1,LR990083.1" cat="ancestral_unit" colorPalette="pride" plotRatio="1.5" pointSize="20" result=feature item xs=6}
 
 :::
 
