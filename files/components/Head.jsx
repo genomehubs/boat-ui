@@ -29,11 +29,13 @@ const Head = ({ siteName, basename }) => {
       <link
         rel="mask-icon"
         href={basename + "/safari-pinned-tab.svg?v=1"}
-        color="#5bbad5"
+        color="#31323f"
       />
       <link rel="shortcut icon" href={basename + "/favicon.ico?v=1"} />
-      <meta name="msapplication-TileColor" content="#da532c" />
-      <meta name="theme-color" content="#ffffff" />
+      <meta name="apple-mobile-web-app-title" content="BoaT" />
+      <meta name="application-name" content="BoaT" />
+      <meta name="msapplication-TileColor" content="#2b5797" />
+      <meta name="theme-color" content="#31323f" />
     </Helmet>
   );
 };

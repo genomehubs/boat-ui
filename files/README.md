@@ -1,3 +1,3 @@
-# BoaT icons
+# BoaT files
 
-use [realfavicongenerator](https://realfavicongenerator.net) to generate files
+use boat-icon.svg file with [realfavicongenerator](https://realfavicongenerator.net) to generate favicon files

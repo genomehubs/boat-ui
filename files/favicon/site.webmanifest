@@ -1,6 +1,6 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "BoaT",
+    "short_name": "BoaT",
     "icons": [
         {
             "src": "/android-chrome-192x192.png?v=1",
@@ -13,7 +13,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff",
+    "theme_color": "#31323f",
+    "background_color": "#31323f",
     "display": "standalone"
 }
