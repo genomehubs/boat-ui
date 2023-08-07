@@ -19,5 +19,9 @@ valueD_example: 10777271
 valueD_label: end
 valueD_description: |
   end coordinate of region to search for
-url: /search?result=feature&taxonomy=ncbi&query=feature_type%3D{valueA}%20AND%20sequence_id%3D{valueB}%20AND%20start%3C%3D{valueC}%20AND%20end%3E%3D{valueD}#feature_type%3D{valueA}%20AND%20sequence_id%3D{valueB}%20AND%20start%3C%3D{valueC}%20AND%20end%3E%3D{valueD}
+url:
+  path: /search
+  result: feature
+  taxonomy: ncbi
+  query: feature_type={valueA} AND sequence_id {valueB} AND start<={valueC} AND end>={valueD}
 ```

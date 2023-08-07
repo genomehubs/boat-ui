@@ -15,6 +15,10 @@ valueC_example: lepidoptera
 valueC_label: BUSCO lineage
 valueC_description: |
   Odb10 BUSCO lineage to use for comparison
-url: |
-  /search?query=assembly_id%3D{valueA}%2C{valueB}%20AND%20collate%28sequence_id,busco_gene%29%20AND%20feature_type%3D{valueC}-busco-gene&result=feature&taxonomy=ncbi&report=oxford#assembly_id%3D{valueA}%2C{valueB}%20AND%20collate%28sequence_id,busco_gene%29%20AND%20feature_type%3D{valueC}-busco-gene
+url:
+  path: /search
+  query: assembly_id={valueA},{valueB} AND collate(sequence_id,busco_gene) AND feature_type={valueC}-busco-gene
+  result: feature
+  taxonomy: ncbi
+  report: oxford
 ```
