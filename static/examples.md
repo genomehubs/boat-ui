@@ -2,6 +2,6 @@
 Content to display immediately below the search box when the user toggles "show examples"
 -->
 
-::include{pageId=help/searchTips.md xs=12 .inline}
+_Borrowed from the [GoaT](https://goat.genomehubs.org) search tips. This page will be updated with BoaT-specific search examples soon. Meanwhile, please see the [templates page](/templates) to get started._
 
-To see some examples of the more advanced search options available, try out one of our [search templates](/templates) or take a look at the reports on the [project pages](/projects) and further down this page. [read more...](/help)
+::include{pageId=help/searchTips.md xs=12 .inline}

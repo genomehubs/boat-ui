@@ -2,6 +2,6 @@
 Content to display above the search box on the landing page
 -->
 
-# BUSCOs on a Tree (BoaT)
+# BoaT: Placing BUSCOs and other BlobToolkit data on a tree
 
-BoaT has been built using [GenomeHubs](https://github.com/genomehubs/genomehubs) to present BUSCO results and related analyses and metadata for the majority of Eukaryotic genome assemblies across the tree of life. [read more...](/about)
+BoaT has been built using [GenomeHubs](https://github.com/genomehubs/genomehubs) to present [BUSCO](https://busco.ezlab.org) results and related analyses run as part of the [BlobToolKit](https://blobtoolkit.genomehubs.org) pipeline for Eukaryotic genome assemblies across the tree of life. [read more...](/about)

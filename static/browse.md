@@ -2,7 +2,7 @@
 Content to display immediately below the search box when the user toggles "browse tree"
 -->
 
-BoaT uses the [NCBI taxonomy](https://www.ncbi.nlm.nih.gov/taxonomy) tree as its default backbone taxonomy. Tap the tree nodes below to browse the taxa available in GoaT or long press to search for data on a particular taxon.
+BoaT uses the [NCBI taxonomy](https://www.ncbi.nlm.nih.gov/taxonomy) tree as its default backbone taxonomy. Tap the tree nodes below to browse the taxa available in BoaT or long press to search for data on a particular taxon.
 
 :::grid{container direction=row spacing="1"}
 

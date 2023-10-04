@@ -1,5 +1,7 @@
 # Help
 
+_Borrowed from the [GoaT](https://goat.genomehubs.org) help text. This page will be updated with BoaT-specific help soon._
+
 :::grid{container direction="row" toggle expand title="Getting started" spacing="1"}
 
 ::include{pageId=help/searchTips.md xs=12 .unpadded}
