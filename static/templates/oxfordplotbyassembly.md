@@ -1,6 +1,6 @@
 ```template
 id: oxfordPlotByAssembly
-title: Oxford plot using BUSCO genes
+title: Oxford plot using BUSCO genes by assembly
 description: |
   Show locations of all BUSCO genes shared between a pair of assemblies
 valueA_example: GCA_905147045.1

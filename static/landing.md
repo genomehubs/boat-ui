@@ -1,10 +1,6 @@
-# BUSCOs on a Tree (:hub)
+# Explore BoaT data
 
-:hub is built using GenomeHubs 2, to present BUSCO results and related analyses and metadata for the majority of Eukaryotic genome assemblies across the tree of life.
-
-Metadata in :hub include proportions of GC and masked bases and BUSCO statuses for all relevant lineages for each assembly.
-
-# Oxford plots
+## Oxford plots
 
 :hub allows exploration of colineraity between pairs of assemblies through Oxford plots using BUSCO gene positions.
 
@@ -16,7 +12,7 @@ Metadata in :hub include proportions of GC and masked bases and BUSCO statuses f
 
 :::
 
-# BUSCO counts
+## BUSCO counts
 
 Busco identities are recorded for each taxon, allowing plots of counts in each category.
 

@@ -1,8 +1,8 @@
 ```template
-id: oxfordPlotByTaxon
-title: Oxford plot using BUSCO genes by taxon
+id: oxfordPlotByTaxonLepidoptera
+title: Oxford plot using Lepidoptera BUSCO genes assigned to Merian units
 description: |
-  Show locations of all BUSCO genes shared between a pair of species
+  Show locations of all Lepidoptera BUSCO genes shared between a pair of species, coloured by Merian unit assignment
 valueA_example: Nymphalis io
 valueA_label: Taxon A
 valueA_description: |
@@ -11,15 +11,12 @@ valueB_example: Erynnis tages
 valueB_label: Taxon B
 valueB_description: |
   Taxon name or ID to plot on y-axis
-valueC_example: lepidoptera
-valueC_label: BUSCO lineage
-valueC_description: |
-  Odb10 BUSCO lineage to use for comparison
 url:
   path: /search
-  query: assembly_id=queryA.assembly_id,queryB.assembly_id AND collate(sequence_id,busco_gene) AND feature_type={valueC}-busco-gene
+  query: assembly_id=queryA.assembly_id,queryB.assembly_id AND collate(sequence_id,busco_gene) AND feature_type=lepidoptera-busco-gene AND ancestral_unit
   queryA: assembly--tax_name({valueA}) AND refseq_category=representative genome,reference genome
   queryB: assembly--tax_name({valueB}) AND refseq_category=representative genome,reference genome
+  cat: ancestral_unit[32]
   xOpts: ";;;;{valueA}"
   yOpts: ";;;;{valueB}"
   result: feature
