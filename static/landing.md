@@ -1,5 +1,28 @@
 # Explore BoaT data
 
+:::grid{container direction="row" spacing="1"}
+
+```report
+report: arc
+x: eukaryota_odb10_complete
+y: refseq_category AND scaffold_count <= 10000
+includeEstimates: true
+result: assembly
+taxonomy: ncbi
+xs: 4
+```
+
+```report
+report: xPerRank
+x: eukaryota_odb10_complete
+includeEstimates: true
+result: taxon
+taxonomy: ncbi
+xs: 4
+```
+
+:::
+
 ## Oxford plots
 
 :hub allows exploration of colineraity between pairs of assemblies through Oxford plots using BUSCO gene positions.

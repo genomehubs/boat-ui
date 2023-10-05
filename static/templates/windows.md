@@ -1,4 +1,4 @@
-# Window-based statistics
+::breadcrumbs[Window-based statistics]
 
 Window-based statistics show patterns in values of properties such as GC content along the length of chromosomes. These plots can be uesd to identify centromeric regions and can offer insight into large-scale chromosome patterning.
 
@@ -23,14 +23,12 @@ xs: 8
 
 :::
 
-Coming soon...
+BoaT provides templates to generate similar plots for all indexed statistics for a given assembly accession or taxon name at fixed window sizes of 1Mb and 100Kb or relative window sizes of 0.1 and 0.01 proportions of chromosome length.
 
-BoaT will provide templates to generate similar plots for all indexed statistics for a given assembly accession or taxon name at fixed window sizes of 1Mb and 100Kb or relative window sizes of 0.1 and 0.01 proportions of chromosome length.
-
-<!-- :::grid{container direction="row" spacing="1"}
+:::grid{container direction="row" spacing="1"}
 
 ::include{pageId=templates/windowPlotByAssembly.md xs=6}
 
 ::include{pageId=templates/windowPlotByTaxon.md xs=6}
 
-::: -->
+:::

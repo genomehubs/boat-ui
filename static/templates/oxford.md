@@ -1,4 +1,4 @@
-# Oxford plots
+::breadcrumbs[Oxford plots]
 
 Oxford plots allow you to visualize synteny and rearrangements between pairs of genomes. Patterns in linkage group and gene order conservation differ across lineages.
 
@@ -16,7 +16,7 @@ yOpts: ;;;;Metridium senile
 plotRatio: 1
 result: feature
 taxonomy: ncbi
-xs: 3
+xs: 4
 ```
 
 ```report
@@ -29,7 +29,7 @@ yOpts: ;;;;Nematostella vectensis
 plotRatio: 1
 result: feature
 taxonomy: ncbi
-xs: 3
+xs: 4
 ```
 
 ```report
@@ -42,7 +42,7 @@ yOpts: ;;;;Haliclystus octoradiatus
 plotRatio: 1
 result: feature
 taxonomy: ncbi
-xs: 3
+xs: 4
 ```
 
 :::

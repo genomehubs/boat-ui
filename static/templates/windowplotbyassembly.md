@@ -17,7 +17,7 @@ valueC_description: |
   Window size. Options include: 1000000, 100000, 0.1 & 0.01
 url:
   path: /search
-  query: midpoint_proportion AND assembly_id={valueA} feature_type=window-{valueC} AND {valueB}
+  query: midpoint_proportion AND assembly_id={valueA} AND feature_type=window-{valueC} AND {valueB}
   report: scatter
   y: "{valueB}"
   cat: sequence_id[50]

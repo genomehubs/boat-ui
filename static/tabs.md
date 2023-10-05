@@ -1,5 +1,4 @@
 - search
-- templates
-- help
+- +templates+
+- +help+
 - (about)
-- api
