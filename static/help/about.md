@@ -1,8 +1,8 @@
 <!--
-Content to display at /about
+Content to display at /help/about
 -->
 
-# About BoaT
+::breadcrumbs[About BoaT]
 
 BoaT has been built using [GenomeHubs](https://github.com/genomehubs/genomehubs) to present [BUSCO](https://busco.ezlab.org) results and related analyses run as part of the [BlobToolKit](https://blobtoolkit.genomehubs.org) pipeline for Eukaryotic genome assemblies across the tree of life.
 

@@ -1,5 +1,5 @@
 <!--
-Content to display at /search
+Content to display at /help/api
 -->
 
 ::breadcrumbs[API]
