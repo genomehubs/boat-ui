@@ -1,5 +1,7 @@
 # Explore BoaT data
 
+BoaT contains data for over 2,500 public assemblies. All assemblies indexed in BoaT have an NCBI refseq category of _representative genome_ or _reference genome_, a maximum scaffold count of 10,000 and have been analysed for [BlobToolKit](https://blobtoolkit.genomehubs.org).
+
 :::grid{container direction="row" spacing="1"}
 
 ```report
@@ -10,6 +12,7 @@ includeEstimates: true
 result: assembly
 taxonomy: ncbi
 xs: 4
+caption: Proportion of representative genome assemblies available on BoaT
 ```
 
 ```report
@@ -19,6 +22,7 @@ includeEstimates: true
 result: taxon
 taxonomy: ncbi
 xs: 4
+caption: Numbers of taxa available on BoaT
 ```
 
 :::
