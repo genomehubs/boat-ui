@@ -12,13 +12,13 @@ x: midpoint_proportion AND assembly_id=GCA_902806685.1 AND feature_type=window-1
 y: gc
 cat: sequence_id[50]
 includeEstimates: true
-plotRatio: 2
+ratio: 2
 scatterThreshold: -1
 pointSize: 15
 compactLegend: true
 result: feature
 taxonomy: ncbi
-xs: 8
+xs: 12
 ```
 
 :::

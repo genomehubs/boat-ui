@@ -26,5 +26,6 @@ url:
   scatterThreshold: -1
   pointSize: 15
   result: taxon
+  ratio: 1.5
   taxonomy: ncbi
 ```

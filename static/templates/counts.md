@@ -14,7 +14,7 @@ rank: species
 cat: phylum[11]
 includeEstimates: false
 yOpts: 130;260;14
-plotRatio: 2
+ratio: 2
 scatterThreshold: -1
 pointSize: 15
 result: taxon

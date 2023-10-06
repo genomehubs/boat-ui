@@ -13,7 +13,7 @@ queryA: assembly--tax_name(Diadumene lineata) AND refseq_category=representative
 queryB: assembly--tax_name(Metridium senile) AND refseq_category=representative genome,reference genome
 xOpts: ;;;;Diadumene lineata
 yOpts: ;;;;Metridium senile
-plotRatio: 1
+ratio: 1
 result: feature
 taxonomy: ncbi
 xs: 4
@@ -26,7 +26,7 @@ queryA: assembly--tax_name(Diadumene lineata) AND refseq_category=representative
 queryB: assembly--tax_name(Nematostella vectensis) AND refseq_category=representative genome,reference genome
 xOpts: ;;;;Diadumene lineata
 yOpts: ;;;;Nematostella vectensis
-plotRatio: 1
+ratio: 1
 result: feature
 taxonomy: ncbi
 xs: 4
@@ -39,7 +39,7 @@ queryA: assembly--tax_name(Diadumene lineata) AND refseq_category=representative
 queryB: assembly--tax_name(Haliclystus octoradiatus) AND refseq_category=representative genome,reference genome
 xOpts: ;;;;Diadumene lineata
 yOpts: ;;;;Haliclystus octoradiatus
-plotRatio: 1
+ratio: 1
 result: feature
 taxonomy: ncbi
 xs: 4
