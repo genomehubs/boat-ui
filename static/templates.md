@@ -4,7 +4,7 @@ We have created search templates to make it easier to run some advanced searches
 
 ## Oxford plots
 
-[Oxford plots](/templates/oxford) allow you to visualize synteny and rearrangements between pairs of genomes. Patterns in linkage group and gene order conservation differ across lineages and can help uncover genomic architecture evolution. [view templates...](/templates/oxford)
+[Oxford plots](/templates/oxford) allow visualisation of synteny and rearrangements between pairs of genomes. Patterns in linkage group and gene order conservation differ across lineages and can help uncover genomic architecture evolution. [view templates...](/templates/oxford)
 
 ## Window-based statistics
 

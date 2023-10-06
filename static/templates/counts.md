@@ -2,7 +2,7 @@
 
 Plots of BUSCO counts relative to assembly metrics can reveal patterns of BUSCO completeness within and across lineages.
 
-A plot of Eukaryota BUSCO count against assembly span for phyla with at least 10 assemblies in BoaT helps to highlight differences between lineages. The minimum count threshold filters out lower quality assemblies to focus on more complete genome representations.
+A plot of Eukaryota BUSCO count against assembly span for phyla with at least 10 assemblies in BoaT helps to highlight differences between lineages. The minimum count threshold filters out lower quality assemblies to focus on more complete genome representations. _All plots on BoaT are interactive, click on a phylum in the legend to highlight the associated points, click on the plot to search within a bin, or click the icon to the top right of the plot to expand the plot and view more options._
 
 :::grid{container direction="row" spacing="1" inline}
 
