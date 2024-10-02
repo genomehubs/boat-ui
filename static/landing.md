@@ -2,7 +2,7 @@
 
 BoaT contains data for over 2,500 public assemblies, based on analyses run for[BlobToolKit](https://blobtoolkit.genomehubs.org). All assemblies indexed in BoaT have an NCBI refseq category of _representative genome_ or _reference genome_ and a maximum scaffold count of 10,000. Further assemblies meeting these criteria will be added soon from analyses available through the [Genome After Party Portal](https://gap.cog.sanger.ac.uk/).
 
-:::grid{container direction="row" spacing="1"}
+:::grid{container direction="row" spacing="1" size=12}
 
 ```report
 report: arc
@@ -48,7 +48,7 @@ We have created a set of advanced search templates to highlight some of the ways
 
 Visit the [templates page](/templates) for more examples.
 
-:::grid{container direction="row" spacing="1"}
+:::grid{container direction="row" spacing="1" size=12}
 
 ::include{pageId=templates/oxfordPlotByTaxon.md size=6 className=unpadded}
 
@@ -63,7 +63,7 @@ Visit the [templates page](/templates) for more examples.
 
 :hub allows exploration of colineraity between pairs of assemblies through Oxford plots using BUSCO gene positions.
 
-:::grid{container direction="row" toggle title="Oxford plot examples" spacing="1" class="padded"}
+:::grid{container direction="row" toggle title="Oxford plot examples" spacing="1" class="padded" size=12}
 
 ```report
 report: oxford
@@ -97,7 +97,7 @@ caption: Detailed view of an oxford plot, coloured by Merian unit, highlighting 
 
 Busco identities are recorded for each taxon, allowing plots of BUSCO counts against other assembly metrics.
 
-:::grid{container direction="row" toggle title="BUSCO counts" spacing="1" class="padded"}
+:::grid{container direction="row" toggle title="BUSCO counts" spacing="1" class="padded" size=12}
 
 ```report
 report: scatter

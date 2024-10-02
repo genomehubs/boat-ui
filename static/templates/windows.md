@@ -4,7 +4,7 @@ Window-based statistics show patterns in values of properties such as GC content
 
 This example plot shows values of GC in 1Mb windows along the length of each chromosome in the _Maniola hyperantus_ assembly GCA_902806685.1. Windows are plotted by their proportional midpoint along the chromosome length on the x-axis against their GC content on the y-axis.
 
-:::grid{container direction="row" spacing="1" inline}
+:::grid{container direction="row" spacing="1" inline size=12}
 
 ```report
 report: scatter
