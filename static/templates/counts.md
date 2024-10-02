@@ -19,7 +19,7 @@ scatterThreshold: -1
 pointSize: 15
 result: taxon
 taxonomy: ncbi
-xs: 12
+size: 12
 ```
 
 :::
@@ -28,8 +28,8 @@ BoaT provides templates to generate plots of BUSCO counts against assembly stati
 
 :::grid{container direction="row" spacing="1"}
 
-::include{pageId=templates/buscoCountByAssemblyStat.md xs=6}
+::include{pageId=templates/buscoCountByAssemblyStat.md size=6}
 
-::include{pageId=templates/buscoCountByBuscoCount.md xs=6}
+::include{pageId=templates/buscoCountByBuscoCount.md size=6}
 
 :::

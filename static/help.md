@@ -4,13 +4,13 @@ _Borrowed from the [GoaT](https://goat.genomehubs.org) help text. This page will
 
 :::grid{container direction="row" toggle expand title="Getting started" spacing="1"}
 
-::include{pageId=help/searchTips.md xs=12 .unpadded}
+::include{pageId=help/searchTips.md size=12 .unpadded}
 
-::grid[These options modify the search query and affect the number of results returned.]{item xs=12 .unpaddedParagraph}
+::grid[These options modify the search query and affect the number of results returned.]{size=12 .unpaddedParagraph}
 
-::include{pageId=help/stepbystep.md xs=12 .unpaddedParagraph}
+::include{pageId=help/stepbystep.md size=12 .unpaddedParagraph}
 
-::include{pageId=help/colorkey.md xs=12 .paragraph}
+::include{pageId=help/colorkey.md size=12 .paragraph}
 
 :::
 
@@ -19,7 +19,7 @@ _Borrowed from the [GoaT](https://goat.genomehubs.org) help text. This page will
 
 ## Search attributes
 
-::include{pageId=help/attributevalues.md xs=12 .inline}
+::include{pageId=help/attributevalues.md size=12 .inline}
 
 :::grid{container direction="row" spacing="1" class="padded"}
 :::

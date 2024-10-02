@@ -18,7 +18,7 @@ pointSize: 15
 compactLegend: true
 result: feature
 taxonomy: ncbi
-xs: 12
+size: 12
 ```
 
 :::
@@ -27,8 +27,8 @@ BoaT provides templates to generate similar plots for all indexed statistics for
 
 :::grid{container direction="row" spacing="1"}
 
-::include{pageId=templates/windowPlotByAssembly.md xs=6}
+::include{pageId=templates/windowPlotByAssembly.md size=6}
 
-::include{pageId=templates/windowPlotByTaxon.md xs=6}
+::include{pageId=templates/windowPlotByTaxon.md size=6}
 
 :::

@@ -11,7 +11,7 @@ y: refseq_category AND scaffold_count <= 10000
 includeEstimates: true
 result: assembly
 taxonomy: ncbi
-xs: 4
+size: 4
 caption: Proportion of representative genome assemblies available on BoaT
 ```
 
@@ -21,7 +21,7 @@ x: eukaryota_odb10_complete
 includeEstimates: true
 result: taxon
 taxonomy: ncbi
-xs: 4
+size: 4
 caption: Numbers of taxa available on BoaT
 ```
 
@@ -35,7 +35,7 @@ yOpts: 400;1000;7;;metazoa_odb10 complete BUSCOs
 scatterThreshold: -1
 result: assembly
 taxonomy: ncbi
-xs: 4
+size: 4
 caption: Relative counts of Eukaryota and Metazoa BUSCOs for metazoan assemblies on BoaT
 ```
 
@@ -50,12 +50,12 @@ Visit the [templates page](/templates) for more examples.
 
 :::grid{container direction="row" spacing="1"}
 
-::include{pageId=templates/oxfordPlotByTaxon.md xs=6 className=unpadded}
+::include{pageId=templates/oxfordPlotByTaxon.md size=6 className=unpadded}
 
-::include{pageId=templates/windowPlotByTaxon.md xs=6 className=unpadded}
+::include{pageId=templates/windowPlotByTaxon.md size=6 className=unpadded}
 
-::grid[&nbsp;&nbsp;more [oxford plot templates](/templates/oxford)]{item xs=6}
-::grid[&nbsp;&nbsp;more [window-based templates](/templates/windows)]{item xs=6}
+::grid[&nbsp;&nbsp;more [oxford plot templates](/templates/oxford)]{size=6}
+::grid[&nbsp;&nbsp;more [window-based templates](/templates/windows)]{ size=6}
 
 :::
 
@@ -71,8 +71,7 @@ x: assembly_id=GCA_905147045.1,GCA_905147235.1 AND collate(sequence_id,busco_gen
 ratio: 1.5
 pointSize: 20
 result: feature
-item: true
-xs: 6
+size: 6
 compactWidth: 900
 caption: Oxford plot comparing Metazoa BUSCO genes between two lepidopteran assemblies
 ```
@@ -85,13 +84,12 @@ colorPalette: pride
 ratio: 1.5
 pointSize: 20
 result: feature
-item: true
-xs: 6
+size: 6
 caption: Detailed view of an oxford plot, coloured by Merian unit, highlighting colinearity on two pairs of chromosomes
 ```
 
-::grid{item xs=8}
-::grid[&nbsp;&nbsp;more [examples and templates](/templates/oxford)]{item xs=4}
+::grid{size=8}
+::grid[&nbsp;&nbsp;more [examples and templates](/templates/oxford)]{size=4}
 
 :::
 
@@ -111,12 +109,12 @@ includeEstimates: false
 scatterThreshold: -1
 result: taxon
 taxonomy: ncbi
-xs: 12
+size: 12
 ratio: 2
 caption: Eukaryota BUSCO counts against assembly span for the main phyla represented on BoaT
 ```
 
-::grid{item xs=8}
-::grid[&nbsp;&nbsp;more [examples and templates](/templates/counts)]{item xs=4}
+::grid{size=8}
+::grid[&nbsp;&nbsp;more [examples and templates](/templates/counts)]{size=4}
 
 :::

@@ -4,18 +4,18 @@ The active search index affects which attributes are available, toggle the boxes
 
 :::grid{container direction="row" toggle title="Feature attributes" spacing="1"}
 
-::report{report="types" result="feature" item xs=12 .paragraph}
+::report{report="types" result="feature" size=12 .paragraph}
 
 :::
 
 :::grid{container direction="row" toggle title="Assembly attributes" spacing="1"}
 
-::report{report="types" result="assembly" item xs=12 .paragraph}
+::report{report="types" result="assembly" size=12 .paragraph}
 
 :::
 
 :::grid{container direction="row" toggle title="Taxon attributes" spacing="1"}
 
-::report{report="types" result="taxon" item xs=12 .paragraph}
+::report{report="types" result="taxon" size=12 .paragraph}
 
 :::

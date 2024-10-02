@@ -2,7 +2,7 @@
 
 ## Attribute values
 
-::include{pageId=help/attributeValues.md xs=12 .inline}
+::include{pageId=help/attributeValues.md size=12 .inline}
 
 :::grid{container direction="row" spacing="1" class="padded"}
 :::

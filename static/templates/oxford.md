@@ -16,7 +16,7 @@ yOpts: ;;;;Metridium senile
 ratio: 1
 result: feature
 taxonomy: ncbi
-xs: 4
+size: 4
 ```
 
 ```report
@@ -29,7 +29,7 @@ yOpts: ;;;;Nematostella vectensis
 ratio: 1
 result: feature
 taxonomy: ncbi
-xs: 4
+size: 4
 ```
 
 ```report
@@ -42,7 +42,7 @@ yOpts: ;;;;Haliclystus octoradiatus
 ratio: 1
 result: feature
 taxonomy: ncbi
-xs: 4
+size: 4
 ```
 
 :::
@@ -51,16 +51,16 @@ BoaT provides templates to generate Oxford plots based on assembly accessions or
 
 :::grid{container direction="row" spacing="1"}
 
-::include{pageId=templates/oxfordPlotByAssembly.md xs=6}
+::include{pageId=templates/oxfordPlotByAssembly.md size=6}
 
-::include{pageId=templates/oxfordPlotByTaxon.md xs=6}
+::include{pageId=templates/oxfordPlotByTaxon.md size=6}
 
 :::
 
 :::grid{container direction="row" spacing="1"}
 
-::include{pageId=templates/oxfordPlotByTaxonNematoda.md xs=6}
+::include{pageId=templates/oxfordPlotByTaxonNematoda.md size=6}
 
-::include{pageId=templates/oxfordPlotByTaxonLepidoptera.md xs=6}
+::include{pageId=templates/oxfordPlotByTaxonLepidoptera.md size=6}
 
 :::

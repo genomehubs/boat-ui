@@ -6,6 +6,6 @@ BoaT uses the [NCBI taxonomy](https://www.ncbi.nlm.nih.gov/taxonomy) tree as its
 
 :::grid{container direction=row spacing="1"}
 
-::report{report="tree" x="tax_tree(Eukaryota) AND tax_rank(Phylum)" treeStyle="rect" taxonomy="ncbi" includeEstimates excludeAncestral="assembly_span" excludeMissing="assembly_span" levels="subspecies,species,genus,family,order,class,phylum" ratio=3 disableModal="true" caption="Tree of all eukaryotic taxa represented in the NCBI taxonomy" item xs=12}
+::report{report="tree" x="tax_tree(Eukaryota) AND tax_rank(Phylum)" treeStyle="rect" taxonomy="ncbi" includeEstimates excludeAncestral="assembly_span" excludeMissing="assembly_span" levels="subspecies,species,genus,family,order,class,phylum" ratio=3 disableModal="true" caption="Tree of all eukaryotic taxa represented in the NCBI taxonomy" size=12}
 
 :::
