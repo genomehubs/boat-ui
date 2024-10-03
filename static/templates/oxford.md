@@ -4,7 +4,7 @@ Oxford plots allow you to visualize synteny and rearrangements between pairs of 
 
 As the distance between species increases for these cnidarians, fewer shared genes remain in the same order and orientation, though remnants of ancestral chromosomes persist. Such plots help uncover genomic architecture evolution.
 
-:::grid{container direction="row" spacing="1" inline}
+:::grid{container direction="row" spacing="1" inline size=12}
 
 ```report
 report: oxford
