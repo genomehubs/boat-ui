@@ -2,6 +2,8 @@
 Content to display in a panel on each taxon record page.
 -->
 
+# {{scientific_name}}
+
 :::grid{container direction=row spacing=1 alignItems=center}
 ::static{plot=snail.png,cumulative.png,blob.png size=3}
 
