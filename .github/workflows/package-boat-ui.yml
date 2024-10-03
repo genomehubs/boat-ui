@@ -25,7 +25,7 @@ jobs:
           git clone -b develop https://github.com/genomehubs/genomehubs
           mv static/* genomehubs/src/genomehubs-ui/src/client/static/
           mv files/favicon/* genomehubs/src/genomehubs-ui/src/client/favicon/
-          mv files/img/* genomehubs/src/genomehubs-ui/src/client/views/components/img/
+          mv files/img/* genomehubs/src/genomehubs-ui/src/client/client/favicon/
           mv files/components/* genomehubs/src/genomehubs-ui/src/client/views/components/
           # mv files/html/index.html genomehubs/src/genomehubs-ui/src/client/index.html
       - run: cd genomehubs && ./package-ui.sh

@@ -1,8 +1,8 @@
 ::phylopic{recordId="{assembly_id}"}
 
-::recordlink{result=taxon rank=species url="https://goat.genomehubs.org/record?recordId={taxon_id}&result=taxon" label="GoaT" color=#31323f description="Click to view in Genomes on a Tree" icon="/img/goat-icon.png"}
+::recordlink{result=taxon rank=species url="https://goat.genomehubs.org/record?recordId={taxon_id}&result=taxon" label="GoaT" color=#31323f description="Click to view in Genomes on a Tree" icon="/goat-icon.png"}
 
-::recordlink{result=assembly,feature url="https://goat.genomehubs.org/record?recordId={assembly.assembly_id}&result=assembly" label="GoaT" color=#31323f description="Click to view in Genomes on a Tree" icon="/img/goat-icon.png"}
+::recordlink{result=assembly,feature url="https://goat.genomehubs.org/record?recordId={assembly.assembly_id}&result=assembly" label="GoaT" color=#31323f description="Click to view in Genomes on a Tree" icon="/goat-icon.png"}
 
 ::recordlink{result=assembly,feature url="https://boat.genomehubs.org/record?recordId={assembly.identifiers[class:boat_id].identifier}&result=assembly" condition="assembly.identifiers[class:boat_id]" label="BoaT" color=#31323f description="Click to view in BoaT" icon="https://boat.genomehubs.org/apple-touch-icon.png"}
 
