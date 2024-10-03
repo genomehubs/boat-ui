@@ -27,7 +27,7 @@ jobs:
           mv files/favicon/* genomehubs/src/genomehubs-ui/src/client/favicon/
           mv files/img/* genomehubs/src/genomehubs-ui/src/client/views/components/img/
           mv files/components/* genomehubs/src/genomehubs-ui/src/client/views/components/
-          mv files/html/index.html genomehubs/src/genomehubs-ui/src/client/index.html
+          # mv files/html/index.html genomehubs/src/genomehubs-ui/src/client/index.html
       - run: cd genomehubs && ./package-ui.sh
         env:
           GH_API_URL: "https://boat.genomehubs.org/api/v2"
