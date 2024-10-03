@@ -4,15 +4,15 @@
 
 ::recordlink{result=assembly,feature url="https://goat.genomehubs.org/record?recordId={assembly.assembly_id}&result=assembly" label="GoaT" color=#31323f description="Click to view in Genomes on a Tree" icon="/goat-icon.png"}
 
-::recordlink{result=assembly,feature url="https://boat.genomehubs.org/record?recordId={assembly.identifiers[class:boat_id].identifier}&result=assembly" condition="assembly.identifiers[class:boat_id]" label="BoaT" color=#31323f description="Click to view in BoaT" icon="https://boat.genomehubs.org/apple-touch-icon.png"}
+::recordlink{result=assembly,feature url="https://boat.genomehubs.org/record?recordId={assembly.identifiers[class:boat_id].identifier}&result=assembly" condition="assembly.identifiers[class:boat_id]" label="BoaT" color=#31323f description="Click to view in BoaT" icon="/boat-icon.png"}
 
 ::recordlink{result=taxon rank=species url="https://portal.darwintreeoflife.org/data/root/details/{scientific_name}" condition="assembly.attributes.bioproject=PRJEB40665" label="Darwin portal" color=#8fbc45 description="Click to view in the Darwin Tree of Life Data Portal"}
 
 ::recordlink{result=assembly,feature url="https://portal.darwintreeoflife.org/data/organism/details/{assembly.attributes.biosample.value}" condition="assembly.attributes.bioproject=PRJEB40665" label="Darwin portal" color=#8fbc45 description="Click to view in the Darwin Tree of Life Data Portal"}
 
-::recordlink{result=taxon url="https://blobtoolkit.genomehubs.org/view/{taxon_id}" condition="attributes.btk_target" label="BlobToolKit" color=#9c528b description="Click to view in the BlobToolKit Viewer"}
+::recordlink{result=taxon url="https://blobtoolkit.genomehubs.org/view/{taxon_id}" condition="attributes.btk_target" label="BlobToolKit" color=#9c528b description="Click to view in the BlobToolKit Viewer" icon="/blobtoolkit-icon.png"}
 
-::recordlink{result=assembly,feature url="https://blobtoolkit.genomehubs.org/view/{assemblyId}" condition="attributes.btk_target" label="BlobToolKit" color=#9c528b description="Click to view in the BlobToolKit Viewer"}
+::recordlink{result=assembly,feature url="https://blobtoolkit.genomehubs.org/view/{assemblyId}" condition="attributes.btk_target" label="BlobToolKit" color=#9c528b description="Click to view in the BlobToolKit Viewer" icon="/blobtoolkit-icon.png"}
 
 ::recordlink{result=taxon,assembly,feature url="https://www.ebi.ac.uk/ena/browser/view/{assemblyId}" condition="assemblyId" label="ENA" color=#70bdbd description="Click to view assembly {assemblyId} in ENA"}
 
