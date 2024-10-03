@@ -10,9 +10,9 @@
 
 ::recordlink{result=assembly,feature url="https://portal.darwintreeoflife.org/data/organism/details/{assembly.attributes.biosample.value}" condition="assembly.attributes.bioproject=PRJEB40665" label="Darwin portal" color=#8fbc45 description="Click to view in the Darwin Tree of Life Data Portal"}
 
-::recordlink{result=taxon url="https://blobtoolkit.genomehubs.org/view/{taxon_id}" condition="attributes.btk_target" label="BlobToolKit" color=#9c528b description="Click to view in the BlobToolKit Viewer" icon="/blobtoolkit-icon.png"}
+::recordlink{result=taxon url="https://blobtoolkit.genomehubs.org/view/{taxon_id}" condition="attributes.btk_target" label="BlobToolKit" color=#9c528b description="Click to view in the BlobToolKit Viewer" icon="/btk-icon.png"}
 
-::recordlink{result=assembly,feature url="https://blobtoolkit.genomehubs.org/view/{assemblyId}" condition="attributes.btk_target" label="BlobToolKit" color=#9c528b description="Click to view in the BlobToolKit Viewer" icon="/blobtoolkit-icon.png"}
+::recordlink{result=assembly,feature url="https://blobtoolkit.genomehubs.org/view/{assemblyId}" condition="attributes.btk_target" label="BlobToolKit" color=#9c528b description="Click to view in the BlobToolKit Viewer" icon="/btk-icon.png"}
 
 ::recordlink{result=taxon,assembly,feature url="https://www.ebi.ac.uk/ena/browser/view/{assemblyId}" condition="assemblyId" label="ENA" color=#70bdbd description="Click to view assembly {assemblyId} in ENA"}
 
