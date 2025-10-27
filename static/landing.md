@@ -1,10 +1,10 @@
 # Explore BoaT data
 
-BoaT contains data for over 2,500 public assemblies, based on analyses run for[BlobToolKit](https://blobtoolkit.genomehubs.org). All assemblies indexed in BoaT have an NCBI refseq category of _representative genome_ or _reference genome_ and a maximum scaffold count of 10,000. Further assemblies meeting these criteria will be added soon from analyses available through the [Genome After Party Portal](https://gap.cog.sanger.ac.uk/).
+BoaT contains data for over 2,500 public assemblies, based on analyses run for[BlobToolKit](https://blobtoolkit.genomehubs.org) and as part of the [sanger-tol/genomenote pipeline](https://github.com/sanger-tol/genomenote). All assemblies indexed in BoaT are chromosomal, prioritising a single representative assembly (based on NCBI representaive genome assignments) per species. Further assemblies will be added soon.
 
 :::grid{container direction="row" spacing="1" size=12}
 
-```report
+<!-- ```report
 report: arc
 x: eukaryota_odb10_complete
 y: refseq_category AND scaffold_count <= 10000
@@ -13,7 +13,7 @@ result: assembly
 taxonomy: ncbi
 size: 4
 caption: Proportion of representative genome assemblies available on BoaT
-```
+``` -->
 
 ```report
 report: xPerRank
@@ -27,8 +27,8 @@ caption: Numbers of taxa available on BoaT
 
 ```report
 report: scatter
-x: length(eukaryota_odb10_complete)>130 AND tax_tree(2759[Eukaryota]) AND metazoa_odb10_complete
-y: length(metazoa_odb10_complete)
+x: eukaryota_odb10_complete_count>130 AND tax_tree(2759[Eukaryota]) AND metazoa_odb10_complete
+y: metazoa_odb10_complete_count
 cat: phylum[10]
 xOpts: 130;260;14;;eukaryota_odb10 complete BUSCOs
 yOpts: 400;1000;7;;metazoa_odb10 complete BUSCOs
@@ -44,77 +44,73 @@ _All plots on BoaT are interactive, click on the plots above to search within a 
 
 ## Search templates
 
-We have created a set of advanced search templates to highlight some of the ways BoaT can be used to explore BUSCO results other assembly data. The templates below can be used to generate an oxford plot to compare assemblies of two taxa and to plot assembly metrics in windows along each chromosome of an assembly.
+We have created a set of advanced search templates to highlight some of the ways to explore the data in :hub. The templates below can be used to generate an oxford plot to compare assemblies of two taxa and to plot assembly metrics in windows along each chromosome of an assembly.
 
 Visit the [templates page](/templates) for more examples.
 
-:::grid{container direction="row" spacing="1" size=12}
+:::grid{container direction="row" spacing="1"}
 
 ::include{pageId=templates/oxfordPlotByTaxon.md size=6 className=unpadded}
 
 ::include{pageId=templates/windowPlotByTaxon.md size=6 className=unpadded}
 
 ::grid[&nbsp;&nbsp;more [oxford plot templates](/templates/oxford)]{size=6}
-::grid[&nbsp;&nbsp;more [window-based templates](/templates/windows)]{ size=6}
+::grid[&nbsp;&nbsp;more [window-based templates](/templates/windows)]{size=6}
 
 :::
 
-## Oxford plots
+## Ribbon plots
 
-:hub allows exploration of colineraity between pairs of assemblies through Oxford plots using BUSCO gene positions.
-
-:::grid{container direction="row" toggle title="Oxford plot examples" spacing="1" class="padded" size=12}
+:hub allows exploration of synteny through ribbon plots between pairs of complete assemblies or subsets of chromosomes
 
 ```report
-report: oxford
-x: assembly_id=GCA_905147045.1,GCA_905147235.1 AND collate(sequence_id,busco_gene) AND feature_type=metazoa-busco-gene
-ratio: 1.5
-pointSize: 20
+report: ribbon
+x: assembly_id=queryA.assembly_id,queryB.assembly_id AND collate(sequence_id,name) AND feature_type=lepidoptera_odb10-busco-gene AND status!=duplicated
+queryA: assembly--tax_name(Hypena proboscidalis) AND refseq_category=representative genome,reference genome
+queryB: assembly--tax_name(Laspeyria flexula) AND refseq_category=representative genome,reference genome
+xOpts: ;;;;Hypena proboscidalis
+yOpts: ;;;;Laspeyria flexula
+cat: merian_unit[32]
+compactLegend: true
+reorient: true
 result: feature
-size: 6
-compactWidth: 900
-caption: Oxford plot comparing Metazoa BUSCO genes between two lepidopteran assemblies
+taxonomy: ncbi
+ratio: 2
 ```
+
+## Window statistic plots
 
 ```report
-report: oxford
-x: assembly_id=GCA_905147045.1,GCA_905147235.1 AND collate(sequence_id,busco_gene) AND feature_type=lepidoptera-busco-gene AND sequence_id = LR989906.1,LR990085.1,LR989907.1,LR990083.1
-cat: ancestral_unit
-colorPalette: pride
-ratio: 1.5
-pointSize: 20
+report: scatter
+x: midpoint_proportion AND assembly_id=queryA.assembly_id AND feature_type=window-1000000 AND gc
+xField: midpoint_proportion
+queryA: assembly--tax_name(Pieris brassicae)
+y: gc
+cat: sequence_id[31]
+includeEstimates: true
+plotRatio: auto
+scatterThreshold: -1
+pointSize: 15
 result: feature
-size: 6
-caption: Detailed view of an oxford plot, coloured by Merian unit, highlighting colinearity on two pairs of chromosomes
+taxonomy: ncbi
+ratio: 2
 ```
-
-::grid{size=8}
-::grid[&nbsp;&nbsp;more [examples and templates](/templates/oxford)]{size=4}
-
-:::
 
 ## BUSCO counts
 
 Busco identities are recorded for each taxon, allowing plots of BUSCO counts against other assembly metrics.
 
-:::grid{container direction="row" toggle title="BUSCO counts" spacing="1" class="padded" size=12}
-
 ```report
 report: scatter
-x: tax_tree(eukaryota) AND assembly_span AND eukaryota_odb10_complete
-y: length(eukaryota_odb10_complete)
+x: tax_tree(Lepidoptera) AND assembly_span AND lepidoptera_odb10_complete
+y: lepidoptera_odb10_complete_count
 rank: species
-cat: phylum[8]
+cat: family[6]
 includeEstimates: false
 scatterThreshold: -1
 result: taxon
 taxonomy: ncbi
 size: 12
 ratio: 2
-caption: Eukaryota BUSCO counts against assembly span for the main phyla represented on BoaT
+caption: Lepidoptera BUSCO completeness against assembly span for the Lepidoptera families represented in BoaT
 ```
-
-::grid{size=8}
-::grid[&nbsp;&nbsp;more [examples and templates](/templates/counts)]{size=4}
-
-:::

@@ -21,20 +21,20 @@ jobs:
           node-version: "18"
       - run: npm install -g pkg
       - run: |
-          # git clone -b ${{ steps.genomehubs.outputs.release }} https://github.com/genomehubs/genomehubs
-          git clone -b develop https://github.com/genomehubs/genomehubs
+          git clone -b ${{ steps.genomehubs.outputs.release }} https://github.com/genomehubs/genomehubs
           mv static/* genomehubs/src/genomehubs-ui/src/client/static/
           mv files/favicon/* genomehubs/src/genomehubs-ui/src/client/favicon/
           mv files/img/* genomehubs/src/genomehubs-ui/src/client/favicon/
           mv files/components/* genomehubs/src/genomehubs-ui/src/client/views/components/
-          # mv files/html/index.html genomehubs/src/genomehubs-ui/src/client/index.html
+          mv files/html/index.html genomehubs/src/genomehubs-ui/src/client/index.html
       - run: cd genomehubs && ./package-ui.sh
         env:
           GH_API_URL: "https://boat.genomehubs.org/api/v2"
+          GH_ARCHIVE: "latest"
           GH_BASENAME: ""
-          GH_SITENAME: boat
-          GH_SUGGESTED_TERM: Gastropoda
-      - uses: actions/upload-artifact@v3
+          GH_SITENAME: BoaT
+          GH_SUGGESTED_TERM: Lepidoptera
+      - uses: actions/upload-artifact@v4
         with:
           name: boat-ui
           path: ./genomehubs/dist/*
@@ -49,7 +49,7 @@ jobs:
           repository: genomehubs/genomehubs
       - run: |
           git clone -b ${{ steps.genomehubs.outputs.release }} https://github.com/genomehubs/genomehubs
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4
         with:
           name: boat-ui
           path: ./dist
