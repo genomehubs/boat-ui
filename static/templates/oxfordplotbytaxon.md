@@ -3,7 +3,7 @@ id: oxfordPlotByTaxon
 title: Oxford plot using BUSCO genes by taxon
 description: |
   Show locations of all BUSCO genes shared between a pair of species
-valueA_example: Maniola hyperantus
+valueA_example: Erynnis tages
 valueA_label: Taxon A
 valueA_description: |
   Taxon name or ID to plot on x-axis

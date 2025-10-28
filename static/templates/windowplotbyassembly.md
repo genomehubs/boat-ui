@@ -14,7 +14,7 @@ valueB_description: |
 valueC_example: 1000000
 valueC_label: window-size
 valueC_description: |
-  Window size. Options include: 1000000, 100000, 0.1 & 0.01
+  Window size. Options include: 1000000 & 0.1
 url:
   path: /search
   query: midpoint_proportion AND assembly_id={valueA} AND feature_type=window-{valueC} AND {valueB}

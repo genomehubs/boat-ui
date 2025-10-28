@@ -1,6 +1,6 @@
 # Explore BoaT data
 
-BoaT contains data for over 2,500 public assemblies, based on analyses run for[BlobToolKit](https://blobtoolkit.genomehubs.org) and as part of the [sanger-tol/genomenote pipeline](https://github.com/sanger-tol/genomenote). All assemblies indexed in BoaT are chromosomal, prioritising a single representative assembly (based on NCBI representaive genome assignments) per species. Further assemblies will be added soon.
+BoaT contains data for over 2,500 public assemblies, based on analyses run for[BlobToolKit](https://blobtoolkit.genomehubs.org) and as part of the [sanger-tol/genomenote pipeline](https://github.com/sanger-tol/genomenote). All assemblies indexed in BoaT are chromosomal, prioritising a single representative assembly (based on NCBI representaive genome assignments) per species. Further assemblies will be added soon along with links to all imported data. For now a subset of imported data are available from [busco.cog.sanger.ac.uk](https://busco.cog.sanger.ac.uk) and [gap.cog.sanger.ac.uk](https://gap.cog.sanger.ac.uk).
 
 :::grid{container direction="row" spacing="1" size=12}
 
@@ -27,7 +27,7 @@ caption: Numbers of taxa available on BoaT
 
 ```report
 report: scatter
-x: eukaryota_odb10_complete_count>130 AND tax_tree(2759[Eukaryota]) AND metazoa_odb10_complete
+x: eukaryota_odb10_complete_count>130 AND tax_tree(2759[Eukaryota]) AND metazoa_odb10_complete_count
 y: metazoa_odb10_complete_count
 cat: phylum[10]
 xOpts: 130;260;14;;eukaryota_odb10 complete BUSCOs
@@ -35,7 +35,7 @@ yOpts: 400;1000;7;;metazoa_odb10 complete BUSCOs
 scatterThreshold: -1
 result: assembly
 taxonomy: ncbi
-size: 4
+size: 8
 caption: Relative counts of Eukaryota and Metazoa BUSCOs for metazoan assemblies on BoaT
 ```
 

@@ -2,13 +2,13 @@
 
 Window-based statistics show patterns in values of properties such as GC content along the length of chromosomes. These plots can be uesd to identify centromeric regions and can offer insight into large-scale chromosome patterning.
 
-This example plot shows values of GC in 1Mb windows along the length of each chromosome in the _Maniola hyperantus_ assembly GCA_902806685.1. Windows are plotted by their proportional midpoint along the chromosome length on the x-axis against their GC content on the y-axis.
+This example plot shows values of GC in 1Mb windows along the length of each chromosome in the _Erynnis tages_ assembly GCA_905147235.1. Windows are plotted by their proportional midpoint along the chromosome length on the x-axis against their GC content on the y-axis.
 
 :::grid{container direction="row" spacing="1" inline size=12}
 
 ```report
 report: scatter
-x: midpoint_proportion AND assembly_id=GCA_902806685.1 AND feature_type=window-1000000
+x: midpoint_proportion AND assembly_id=GCA_905147235.1 AND feature_type=window-1000000
 y: gc
 cat: sequence_id[50]
 includeEstimates: true

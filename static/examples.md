@@ -16,4 +16,4 @@ Search the taxon, assembly or feature indexes with example queries:
 
 ## Feature search
 
-- [100kb windows from assembly GCA_905147045.1 with GC content between 30-50%](/search?query=assembly_id%3DGCA_905147045.1%20AND%20feature_type%3Dwindow-100000%20AND%20gc%3E0.3%20AND%20gc%3C0.5&result=feature&taxonomy=ncbi)
+- [1Mb windows from assembly GCA_905147045.1 with GC content between 30-50%](/search?query=assembly_id%3DGCA_905147045.1%20AND%20feature_type%3Dwindow-1000000%20AND%20gc%3E0.3%20AND%20gc%3C0.5&result=feature&taxonomy=ncbi)

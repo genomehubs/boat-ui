@@ -7,7 +7,7 @@ valueA_example: assembly_span
 valueA_label: Assembly statistic
 valueA_description: |
   Assembly statistic to plot on the x-axis
-valueB_example: eukaryota
+valueB_example: eukaryota_odb10
 valueB_label: BUSCO lineage
 valueB_description: |
   BUSCO lineage to plot counts for on the y-axis
