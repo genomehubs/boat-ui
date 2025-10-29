@@ -11,13 +11,13 @@ valueB_example: GCA_905147235.1
 valueB_label: Assembly accession B
 valueB_description: |
   Assembly GCA accession to plot on y-axis
-valueC_example: lepidoptera
+valueC_example: lepidoptera_odb10
 valueC_label: BUSCO lineage
 valueC_description: |
   Odb10 BUSCO lineage to use for comparison
 url:
   path: /search
-  query: assembly_id={valueA},{valueB} AND collate(sequence_id,busco_gene) AND feature_type={valueC}-busco-gene
+  query: assembly_id={valueA},{valueB} AND collate(sequence_id,name) AND feature_type={valueC}-busco-gene
   result: feature
   taxonomy: ncbi
   report: oxford
