@@ -20,6 +20,7 @@ url:
   xOpts: ";;;;{valueA}"
   yOpts: ";;;;{valueB}"
   result: feature
+  reorient: true
   taxonomy: ncbi
   report: oxford
 ```
