@@ -13,10 +13,10 @@ valueB_description: |
   Taxon name or ID to plot on y-axis
 url:
   path: /search
-  query: assembly_id=queryA.assembly_id,queryB.assembly_id AND collate(sequence_id,name) AND feature_type=nematoda_odb10-busco-gene AND ancestral_unit
+  query: assembly_id=queryA.assembly_id,queryB.assembly_id AND collate(sequence_id,name) AND feature_type=nematoda_odb10-busco-gene AND nigon_unit
   queryA: assembly--tax_name({valueA})
   queryB: assembly--tax_name({valueB})
-  cat: ancestral_unit[7]
+  cat: nigon_unit[7]
   xOpts: ";;;;{valueA}"
   yOpts: ";;;;{valueB}"
   result: feature
