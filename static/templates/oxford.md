@@ -9,8 +9,8 @@ As the distance between species increases for these cnidarians, fewer shared gen
 ```report
 report: oxford
 x: assembly_id=queryA.assembly_id,queryB.assembly_id AND collate(sequence_id,name) AND feature_type=metazoa_odb10-busco-gene
-queryA: assembly--tax_name(Diadumene lineata) AND refseq_category=representative genome,reference genome
-queryB: assembly--tax_name(Metridium senile) AND refseq_category=representative genome,reference genome
+queryA: assembly--tax_name(Diadumene lineata)
+queryB: assembly--tax_name(Metridium senile)
 xOpts: ;;;;Diadumene lineata
 yOpts: ;;;;Metridium senile
 ratio: 1
@@ -22,8 +22,8 @@ size: 4
 ```report
 report: oxford
 x: assembly_id=queryA.assembly_id,queryB.assembly_id AND collate(sequence_id,name) AND feature_type=metazoa_odb10-busco-gene
-queryA: assembly--tax_name(Diadumene lineata) AND refseq_category=representative genome,reference genome
-queryB: assembly--tax_name(Nematostella vectensis) AND refseq_category=representative genome,reference genome
+queryA: assembly--tax_name(Diadumene lineata)
+queryB: assembly--tax_name(Nematostella vectensis)
 xOpts: ;;;;Diadumene lineata
 yOpts: ;;;;Nematostella vectensis
 ratio: 1
@@ -35,8 +35,8 @@ size: 4
 ```report
 report: oxford
 x: assembly_id=queryA.assembly_id,queryB.assembly_id AND collate(sequence_id,name) AND feature_type=metazoa_odb10-busco-gene
-queryA: assembly--tax_name(Diadumene lineata) AND refseq_category=representative genome,reference genome
-queryB: assembly--tax_name(Haliclystus octoradiatus) AND refseq_category=representative genome,reference genome
+queryA: assembly--tax_name(Diadumene lineata)
+queryB: assembly--tax_name(Haliclystus octoradiatus)
 xOpts: ;;;;Diadumene lineata
 yOpts: ;;;;Haliclystus octoradiatus
 ratio: 1

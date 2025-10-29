@@ -8,8 +8,8 @@ A plot of Eukaryota BUSCO count against assembly span for phyla with at least 10
 
 ```report
 report: scatter
-x: assembly_span AND length(eukaryota_odb10_complete)>=130
-y: length(eukaryota_odb10_complete)
+x: assembly_span AND eukaryota_odb10_complete_count>=130
+y: eukaryota_odb10_complete_count
 rank: species
 cat: phylum[11]
 includeEstimates: false

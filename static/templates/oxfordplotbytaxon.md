@@ -18,8 +18,8 @@ valueC_description: |
 url:
   path: /search
   query: assembly_id=queryA.assembly_id,queryB.assembly_id AND collate(sequence_id,name) AND feature_type={valueC}-busco-gene AND status!=duplicated
-  queryA: assembly--tax_name({valueA}) AND refseq_category=representative genome,reference genome
-  queryB: assembly--tax_name({valueB}) AND refseq_category=representative genome,reference genome
+  queryA: assembly--tax_name({valueA})
+  queryB: assembly--tax_name({valueB})
   xOpts: ";;;;{valueA}"
   yOpts: ";;;;{valueB}"
   result: feature

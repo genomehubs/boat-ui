@@ -67,8 +67,8 @@ Visit the [templates page](/templates) for more examples.
 ```report
 report: ribbon
 x: assembly_id=queryA.assembly_id,queryB.assembly_id AND collate(sequence_id,name) AND feature_type=lepidoptera_odb10-busco-gene AND status!=duplicated
-queryA: assembly--tax_name(Hypena proboscidalis) AND refseq_category=representative genome,reference genome
-queryB: assembly--tax_name(Laspeyria flexula) AND refseq_category=representative genome,reference genome
+queryA: assembly--tax_name(Hypena proboscidalis)
+queryB: assembly--tax_name(Laspeyria flexula)
 xOpts: ;;;;Hypena proboscidalis
 yOpts: ;;;;Laspeyria flexula
 cat: merian_unit[32]

@@ -20,5 +20,6 @@ url:
   query: assembly_id={valueA},{valueB} AND collate(sequence_id,name) AND feature_type={valueC}-busco-gene
   result: feature
   taxonomy: ncbi
+  reorient: true
   report: oxford
 ```
