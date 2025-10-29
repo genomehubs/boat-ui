@@ -17,8 +17,8 @@ valueC_description: |
   Category to use to colour points on the plot. Optional value in square brackets is number of categories to show
 url:
   path: /search
-  query: "tax_tree({valueB}) AND {valueA} AND {valueB}_odb10_complete"
-  y: "length({valueB}_odb10_complete)"
+  query: "tax_tree({valueB}) AND {valueA} AND {valueB}_odb10_complete_count"
+  y: "{valueB}_odb10_complete_count"
   rank: species
   cat: "{valueC}"
   report: scatter

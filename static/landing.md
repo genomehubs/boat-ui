@@ -35,6 +35,7 @@ yOpts: 400;1000;7;;metazoa_odb10 complete BUSCOs
 scatterThreshold: -1
 result: assembly
 taxonomy: ncbi
+ratio: 2
 size: 8
 caption: Relative counts of Eukaryota and Metazoa BUSCOs for metazoan assemblies on BoaT
 ```
